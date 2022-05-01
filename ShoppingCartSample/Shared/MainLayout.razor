@@ -1,0 +1,22 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+	@*   <div class="sidebar">
+		<NavMenu />
+		</div>
+	*@
+	<div class="main">
+		<div class="top-row px-4">
+			<span class="ml-md-auto">
+				<button type="button" class="btn btn-primary">
+					My Cart ($@_totalAmount)
+				</button>
+			</span>
+		</div>
+
+		<div class="content px-6">
+			@Body
+		</div>
+	</div>
+</div>
+
